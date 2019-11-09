@@ -5,3 +5,12 @@ styles.css
 .hello {
     color: orange;
 }
+
+.iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.iframe-padding {
+    padding: 40px;
+}

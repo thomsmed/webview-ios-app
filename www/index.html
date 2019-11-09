@@ -3,10 +3,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+    <title>Greetings from WebView</title>
+    <meta name="description" content="Greetings from WebView">
+    <meta name="author" content="Thomas Asheim Smedmann">
 
     <link rel="stylesheet" href="styles.css">
 
@@ -14,9 +15,18 @@
 
 <body>
 
-    <div class="hello">Hello World</div>
+    <div class="hello">Hello from WebView</div>
+    <div>
+        Result from Echo plugin: <span id="echo-result"></span>
+    </div>
 
-<script src="scripts.js"></script>
-<script src="plugins/plugins.js"></script>
+    <div class="iframe-padding">
+        <iframe class="iframe" src="iframe/index.html" >
+            This browser does not support iframes
+        </iframe>
+    </div>
+
+    <script src="plugins/plugins.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -20,7 +20,8 @@ class WebViewPlugin: NSObject, WKScriptMessageHandler {
             return
         }
 
-        let jsToRun = "console.log('Echo: \(stringToEcho)');"
+//        let jsToRun = "console.log('Echo: \(stringToEcho)');"
+        let jsToRun = "document.getElementById('echo-result').textContent = '\(stringToEcho)';"
 
         message.webView?.evaluateJavaScript(jsToRun, completionHandler: { result, error in
             if let error = error {
